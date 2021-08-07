@@ -8,7 +8,7 @@ import { Iprofile } from '../Models/iprofile';
 })
 export class HerosService {
 
-  private _url : string = 'https://superhero.api.com/api/' ;
+  private _url : string = 'https://www.superheroapi.com/api.php/' ;
 
   private _token : string = '1458081961231168' ;
 
