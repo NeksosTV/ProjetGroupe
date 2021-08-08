@@ -6,5 +6,6 @@ export interface Iprofile {
     image : any ;
     biography : any ;
     work? : any ;
+    connections? : string ;
 }
 

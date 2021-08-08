@@ -1,19 +1,21 @@
-   
 
-    <h1 class="titre">Adopte ton Super Héros</h1>
+    
+    <h1 class="titre"></h1>
 
     <ul *ngFor="let hero of heroes">
-    <app-hero-detail [hero]="hero"></app-hero-detail>
+    <!-- <app-hero-detail [hero]="hero"></app-hero-detail> -->
         <div class="titre">
             <img  src="{{hero.image.url}}" alt="Image de tout les Super Héros">  <!-- .image.url <= changer ceci pour avoir les info voulut-->
         </div>
 
         <div class="titre">
-          <h1> Nom : {{hero.name}}<br>  <!-- ICI s'affiche les Nom des Heros-->
-             Base : {{hero.work.base}} <br> <!-- ↑ -->
-            <a href="https://www.superheroapi.com/api.php/10159385542572346/{{hero.id}}">ID : {{hero.id}}   </a>  <!-- Affiche l'Id ici -->
-          </h1>    
+          <h1> Name : {{hero.name}}<br>  <!-- ICI s'affiche les Nom des Heros-->
+            alignment : {{hero.biography.alignment}} <br> <!-- ↑ -->
+                 <!-- la ligne ci-dessous fais en sorte que lorsque j'appyue sur ID une autre page s'ouvre avec toute les info des Héors en json-->
+          </h1>
+          <h1><a target="_BLANK" href="https://www.superheroapi.com/api.php/1458081961231168/{{hero.id}}">ID : {{hero.id}}</a>  </h1>
 
           <h1>---------------------------------------------</h1>    <!--Séparateur -->
         </div>
     <ul>
+          
