@@ -12,11 +12,12 @@ import { Subscription } from 'rxjs';
 
 export class SuperHeroesListComponent implements OnInit {
 
-  constructor(private _ApiService: HerosService) {};
-
   public heroes : Iprofile[] = [];
 
-  ngOnInit(){
+  constructor(private _ApiService: HerosService) {};
+
+
+  ngOnInit(): void{
     for (let i = 1 ; i < 731 ; i++) {
       let sub : Subscription = this._ApiService.getOneSuperHeroesByID(i).subscribe(
         (sh:any) => {
@@ -24,14 +25,9 @@ export class SuperHeroesListComponent implements OnInit {
           sub.unsubscribe();
         }
       )
-    }
-
-
-    // this._ApiService.GetAllSuperHeroes().subscribe(
-    //   (sh:any) => this.heroes = sh,
-    //   (e:any) => console.error(e),
-    //   () => console.log('Fin du traitement')
-    // );
+      
+    };
+    
   }
 
 }

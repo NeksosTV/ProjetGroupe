@@ -1,16 +1,36 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: 0;
 }
 
 .teste{
     display: inline-block;
-    text-decoration: none;
-    text-align: center;
 }
 
 
 .titre{
-    text-align: center;
+    // text-align: center;
     color: rgb(12, 0, 117);
+    background: rgb(87, 76, 76);
+}
+
+
+.nav{
+    background: rgb(87, 76, 76);
+}
+
+.navbar{
+    display: inline-block;
+    background: rgb(192, 154, 154);
+    padding: 5px;
+}
+
+.navbar:hover{
+    background: #000;
+}
+
+.lien{
+    color: white;
+    text-decoration: none;  
 }

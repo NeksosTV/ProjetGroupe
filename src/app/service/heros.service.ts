@@ -9,14 +9,13 @@ import { Iprofile } from '../Models/iprofile';
 export class HerosService {
 
   private _url : string = 'https://www.superheroapi.com/api.php/' ;
-
   private _token : string = '1458081961231168' ;
 
   private get _basic_url(): string {
     return `${this._url}${this._token}/`;
   }
 
-  constructor(private _http : HttpClient) { } ;
+  constructor(private _http : HttpClient) { } 
 
   public getAllSuperHeroes():Observable<Iprofile[]> {
     return this._http.get<Iprofile[]>(this._basic_url);

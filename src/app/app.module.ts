@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { SuperHeroesListComponent } from './Components/super-heroes-list/super-heroes-list.component';
 import { HeroDetailComponent } from './Components/hero-detail/hero-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SuperHeroesListComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

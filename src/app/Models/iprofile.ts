@@ -3,6 +3,8 @@ export interface Iprofile {
     name : string ;
     powerstats? : any ;
     appearence? : any ;
-    gender? : string;
+    image : any ;
+    biography : any ;
+    work? : any ;
 }
 
