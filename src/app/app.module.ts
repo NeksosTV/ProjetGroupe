@@ -9,6 +9,7 @@ import { SuperHeroesListComponent } from './Components/super-heroes-list/super-h
 import { HeroDetailComponent } from './Components/hero-detail/hero-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './Components/footer/footer.component';
+import { MaterializeButtonModule, MaterializeCardModule } from 'materialize-angular';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { FooterComponent } from './Components/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterializeButtonModule,
+    MaterializeCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
